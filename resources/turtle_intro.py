@@ -1,5 +1,31 @@
 import turtle
 
-turtle.forward(15)
-turtle.right(25)
+#turtle.forward(80)
+#turtle.left(98)
+#turtle.right(80)
+#turtle.done()
+
+turtle.home()
+for i in range(1,100,1):
+    turtle.setposition(2*-i, 2*-i)
+    turtle.color("red")
+    turtle.speed(0)
+    turtle.width(0.5)
+    turtle.circle(30, 360, steps= 1000)
+    turtle.penup()
+    turtle.pendown()
+    turtle.setposition(2 * -i, -2 * -i)
+    turtle.circle(30, 360, steps=1000)
+    turtle.setposition(-2 * -i, 2 * -i)
+    turtle.circle(30, 360, steps=1000)
+    turtle.penup()
+    turtle.pendown()
+    turtle.setposition(2 * -i, 2 * -i)
+    turtle.circle(30, 360, steps=1000)
+    turtle.pendown()
+    turtle.setposition(-2 * -i, -2 * -i)
+    turtle.circle(30, 360, steps=1000)
+    turtle.penup()
+    turtle.pendown()
 turtle.done()
+
